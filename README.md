@@ -8,7 +8,7 @@ A simple Python command-line quiz that helps determine the best type of gift or 
 
 This app asks a series of multiple-choice questions and tracks answers across different categories.
 
-At the end, it creates a profile of user prefrences
+At the end, it creates a profile of user preferences
 
 ---
 
@@ -23,7 +23,7 @@ python main.py
 
 **🔮 Future improvements**
 
-Input validation for cleaner UX
+✅ Input validation for cleaner UX
 
 Web version (Flask or React)
 
