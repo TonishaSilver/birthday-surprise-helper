@@ -1,9 +1,15 @@
 def ask_question(question, options):
-    print("\n" + question)
-    for key, value in options.items():
-        print(f"{key}: {value}")
-    answer = input("Choose an option: ").lower()
-    return answer
+    while True: #User input validation
+        print("\n" + question)
+        for key, value in options.items():
+            print(f"{key}: {value}")
+        answer = input("Choose an option: ").lower().strip()
+
+        if answer in options:
+            return answer
+        else:
+            print("❌ Invalid choice. Please try again.")
+
 
 #================================================
 # SCORE TRACKING
@@ -43,7 +49,6 @@ def gift_branch():
             "b": "5 good gifts 🎉 "
         }
     )
-
     if answer == "a":
         score["big_gift"] += 1
     elif answer == "b":
@@ -93,7 +98,7 @@ def experience_branch():
             "a": "Adventure 🧗",
             "b": "Relaxation 🧖",
             "c": "Food 🍣",
-            "d": "Music "
+            "d": "Music 🎵"
         }
     )
 
@@ -110,9 +115,9 @@ def experience_branch():
     answer = ask_question(
         "Who would you want to go with?",
         {
-            "a": "Alone",
-            "b": "Friends",
-            "c": "Me"
+            "a": "Alone 👤",
+            "b": "Friends 👥",
+            "c": "Me 💕"
         }
     )
 
