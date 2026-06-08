@@ -4,9 +4,9 @@ import resend
 
 # Config
 app = Flask(__name__)
-app.secret_key = "your-secret-key"
+app.secret_key = os.getenv("SECRET_KEY", "dev-key")
 
-
+resend.api_key = os.getenv("RESEND_API_KEY")
 resend.api_key = "re_Jsn4NCPh_27MjrDjdK6vEmMbsfwEJm67P"
 
 @app.route("/send-email", methods=["POST"])
