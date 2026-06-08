@@ -1,30 +1,41 @@
-**🎁 Gift Quiz App**
+**🎁 Birthday Surprise Helper**
 
-A simple Python command-line quiz that helps determine the best type of gift or experience for someone based on their preferences.
+Birthday Surprise Helper is a Flask web application that helps uncover the perfect birthday surprise through a series of fun, interactive questions.
 
----
-
-**🧠 What it does**
-
-This app asks a series of multiple-choice questions and tracks answers across different categories.
-
-At the end, it creates a profile of user preferences
+Users choose between a Gift or Experience path and answer tailored questions that build a personalised profile. At the end of the quiz, results can be viewed in the browser and emailed directly to the user.
 
 ---
 
-**🚀 How to run**
+**🧠 Features**
 
-Make sure you have Python installed, then run:
+Branching quiz logic
 
-```bash
-python main.py
-```
+    🎁 Gift pathway
+
+    🎟️ Experience pathway
+
+Multi-page questionnaire
+
+Session-based answer tracking
+
+Responsive card-based UI
+
+Email results functionality using Resend
+
+Built with Flask, HTML, CSS and Python
+
+---
+
+💻 How to run
+
+Visit https://birthday-surprise-0nmi.onrender.com/
+
 ---
 
 **🔮 Future improvements**
 
 ✅ Input validation for cleaner UX
 
-Web version (Flask or React)
+✅Web version (Flask or React)
 
-Emailing results
+✅Emailing results
