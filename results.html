@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Birthday Surprise</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div id="quiz">
+<h3> Results </h3>
+
+{% for key, value in profile.items() %}
+<p><strong>{{ key.replace("_", " ").title() }}:</strong> {{ value }}</p>
+{% endfor %}
+
+<form action="/send-email" method="POST">
+
+    <h5>Help a sister out and send the results </h5>
+    <div id="email">
+        <input type="email"
+           name="email"
+           placeholder="Enter my email"
+           required>
+    </div>
+
+
+    <button type="submit">
+        Send Results
+    </button>
+
+</form>
+
+<form action="/">
+    <button class="button" type="submit">
+        Start again
+    </button>
+</form>
+
+</div>
+</body>
+</html>

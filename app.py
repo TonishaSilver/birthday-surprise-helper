@@ -48,11 +48,18 @@ Who with: {session.get('who_with')}
 
     return redirect("/results")
 
-#Home
+
+#Welcome
 @app.route("/")
+def opening():
+    return render_template("opening.html")
+
+#Home
+@app.route("/home")
 def home():
     session.clear()
     return render_template("home.html")
+
 
 #Branch selection
 

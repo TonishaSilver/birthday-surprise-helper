@@ -1,0 +1,156 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background: #F0FDF4;
+    color: #064E3B;
+    margin: 0;
+    padding: 40px 20px;
+}
+
+#quiz {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 40px;
+    background: white;
+    border: 1px solid #D1FAE5;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+h3 {
+    text-align: center;
+    color: #111827;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+h5 {
+    text-align: center;
+    color: #111827;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+#question {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.option {
+    display: block;
+    cursor: pointer;
+    margin-bottom: 12px;
+}
+
+.option input {
+    display: none;
+}
+
+.escape-option,
+.option-card,
+.option-card-joke
+ {
+    padding: 16px;
+    border: 2px solid #e5e7eb;
+    border-radius: 12px;
+    background: #D1FAE5;
+    border: 2px solid #D1FAE5;
+    transition: 0.2s ease;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.option-card:hover {
+    border-color: #10B981;
+    transform: translateY(-2px);
+}
+
+/* THIS is the magic */
+.option input:checked + .option-card {
+    border-color: #2563eb;
+    background: #eff6ff;
+    font-weight: 600;
+}
+button {
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+    padding: 14px;
+    background-color: #2563eb;
+    background: #10B981;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+button:hover {
+    background: #059669;
+}
+
+.option-card-joke:hover
+{
+    opacity:0;
+    cursor: not-allowed;
+}
+
+.escape.option {
+    transition: all 0.1s ease;
+    position: relative;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.options-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.email {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    color: #111827;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #111827;
+    margin-bottom: 20px;
+}
+
+
+.yes-button {
+    margin-top: 25px;
+    padding: 20px 50px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    background: #D1FAE5;
+    color: white;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+
+    transition: all 0.25s ease;
+}
+
+.yes-button:hover {
+    background: #2563eb;
+    transform: scale(1.15);
+    box-shadow: 0 12px 25px rgba(16, 185, 129, 0.35);
+}
+
+.small-text {
+    margin-top: 25px;
+    font-style: italic;
+}
+```
