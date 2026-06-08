@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Birthday Surprise</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div id="quiz">
+<h3>Who would you like to go with?</h3>
+<form action="/experience-q2" method="POST">
+
+    <div class="options-grid">
+        <label class="option escape-option">
+        <input type="radio" name="who_with" value="alone" required>
+        <div class="option-card">
+             Alone
+        </div>
+        </label>
+
+        <label class="ooption escape-option">
+        <input type="radio" name="who_with" value="friends" required>
+        <div class="option-card">
+             Friends
+        </div>
+        </label>
+
+        <label class="option">
+        <input type="radio" name="who_with" value="partner" required>
+        <div class="option-card">
+             Me ❤️
+        </div>
+        </label>
+    </div>
+
+    <br><br>
+
+    <button type="submit">
+        Continue
+    </button>
+
+</form>
+</div>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

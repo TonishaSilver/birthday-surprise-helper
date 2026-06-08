@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Birthday Surprise</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div id="quiz">
+
+<form action="gift-q2" method="POST">
+
+    <h3>Sentimental or practical?</h3>
+
+    <div class="options-grid">
+
+        <label class="option">
+        <input type="radio" name="motivation" value="sentimental" required>
+        <div class="option-card">
+             Sentimental 💖
+        </div>
+        </label>
+
+         <label class="option">
+        <input type="radio" name="motivation" value="practical" required>
+        <div class="option-card">
+             Practical 🛠️
+        </div>
+        </label>
+    </div>
+
+    <button type="submit">
+        Continue
+    </button>
+
+</form>
+</div>
+</body>
+</html>

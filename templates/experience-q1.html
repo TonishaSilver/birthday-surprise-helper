@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Birthday Surprise</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div id="quiz">
+<form action="/experience-q1" method="POST">
+
+    <h3>What kind of experience sounds best?</h3>
+
+    <div class="options-grid">
+
+        <label class="option">
+        <input type="radio" name="experience_type" value="adventure" required>
+        <div class="option-card">
+             Adventure 🧗
+        </div>
+        </label>
+
+        <label class="option">
+        <input type="radio" name="experience_type" value="relaxation" >
+        <div class="option-card">
+             Relaxation 🧖
+        </div>
+        </label>
+
+        <label class="option">
+        <input type="radio" name="experience_type" value="food" >
+        <div class="option-card">
+              Food 🍣
+        </div>
+        </label>
+
+        <label class="option">
+        <input type="radio" name="experience_type" value="music" >
+        <div class="option-card">
+               Music 🎵
+        </div>
+        </label>
+    </div>
+
+    <br><br>
+
+    <button type="submit">
+        Continue
+    </button>
+
+</form>
+</div>
+</body>
+</html>

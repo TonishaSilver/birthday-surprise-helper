@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Birthday Surprise</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div id="quiz">
+
+<form action="/gift-q1" method="post">
+
+    <input type="hidden"
+           name="branch"
+           value="gift-q1">
+
+    <h3>Would you rather receive?</h3>
+    <div class="options-grid">
+        <label class="option">
+        <input type="radio" name="gift_style" value="big" required>
+        <div class="option-card">
+             One Amazing Gift 🎁
+        </div>
+        </label>
+
+        <label class="option">
+            <input type="radio" name="gift_style" value="multiple">
+            <div class="option-card">
+                Five Good Gifts 🎉
+            </div>
+        </label>
+    </div>
+
+    <br><br>
+
+    <button type="submit">
+        Continue
+    </button>
+
+</form>
+</div>
+</body>
+</html>
